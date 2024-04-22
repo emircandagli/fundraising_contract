@@ -1,0 +1,165 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract CreateOrganization",
+						"name": "_createOrgContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "orgId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "DonationReceived",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					}
+				],
+				"name": "createNewOrganization",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createOrgContract",
+				"outputs": [
+					{
+						"internalType": "contract CreateOrganization",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orgId",
+						"type": "uint256"
+					}
+				],
+				"name": "donate",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "donors",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalDonated",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numberOfDonations",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/donation.sol": "Donation"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/createOrganization.sol": {
+			"keccak256": "0x7f44e15b696420880e35879324c36c6ca7d3c28acd03b2ccaa3cc9c895405baa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d0c7513f0ee49e6417f5b25da237195776732bffbf55987b322ec5d139a54a85",
+				"dweb:/ipfs/QmQAndAGpafLkkHKHY4Du8H5rNTRKTBCQXx6kRbsmEgLav"
+			]
+		},
+		"contracts/donation.sol": {
+			"keccak256": "0x19c83cb7d855c133fc711f225e035a176dd19e2c55f9c8c6fbe5061c90bec3e9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://62e07fa378095cde1e807b041e82a02597ce8aac2ebc7fa545c064bb2b992360",
+				"dweb:/ipfs/QmcWNio8A8DYrd3CEZUKPzTkkjuY4gnY79jd96tB3rjFqx"
+			]
+		}
+	},
+	"version": 1
+}
